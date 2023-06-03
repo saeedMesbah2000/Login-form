@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__logo">Logo</h1>
+
+      <nav class="header__navbar">
+        <a href="#" class="header__navbar-a">Home</a>
+        <a href="#" class="header__navbar-a">About</a>
+        <a href="#" class="header__navbar-a">Services</a>
+        <a href="#" class="header__navbar-a">Contact</a>
+        <button type="button" class="header__navbar-button">Login</button>
+      </nav>
+    </header>
+
+    <div class="box">
+      <div class="wrapper">
+        <span class="wrapper__icon">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </span>
+
+        <!-- this is for login  -->
+
+        <div class="login">
+          <h2>Login</h2>
+
+          <form action="#">
+            <div class="login__input">
+              <span class="login__input-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+              <input type="email" required class="login__input-input" />
+              <label class="login__input-label">Email</label>
+            </div>
+
+            <div class="login__input">
+              <span class="login__input-icon">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </span>
+              <input type="password" required class="login__input-input" />
+              <label class="login__input-label">Password</label>
+            </div>
+
+            <div class="login__memory">
+              <label class="login__memory-label">
+                <input type="checkbox" class="login__memory-label_input" />
+                Remember me
+              </label>
+              <a href="#" class="login__memory-link">Forget Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+              <p class="login__register-paragraph">
+                Don't have account?
+                <a href="#" class="login__register-paragraph_link">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- this is for registeration -->
+
+        <div class="register">
+          <h2>Registration</h2>
+
+          <form action="#">
+            <div class="register__input">
+              <span class="register__input-icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <input type="text" required class="register__input-input" />
+              <label class="register__input-label">Username</label>
+            </div>
+
+            <div class="register__input">
+              <span class="register__input-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+              <input type="email" required class="register__input-input" />
+              <label class="register__input-label">Email</label>
+            </div>
+
+            <div class="register__input">
+              <span class="register__input-icon">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </span>
+              <input type="password" required class="register__input-input" />
+              <label class="register__input-label">Password</label>
+            </div>
+
+            <div class="register__memory">
+              <label class="register__memory-label">
+                <input type="checkbox" class="register__memory-label_input" />
+                I agree to the terms & conditions.
+              </label>
+            </div>
+
+            <button type="submit" class="register__button">Register</button>
+
+            <div class="register__login">
+              <p class="register__login-paragraph">
+                Already have account?
+                <a href="#" class="register__login-paragraph_link"> Login </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
